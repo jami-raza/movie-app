@@ -1,4 +1,6 @@
-const API_KEY = "8358189b930bb720a585c185047c8b08";
+require('dotenv').config
+
+const API_KEY = process.env.TMDB_KEY
 
 const request = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
